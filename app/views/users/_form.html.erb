@@ -1,0 +1,5 @@
+<%= form_for @user do |f| %>
+  <%= f.label :gender, '性別' %>
+  <%= f.select :gender, User.gender.options %>
+  <%= f.submit '保存' %>
+<% end %>

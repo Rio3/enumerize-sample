@@ -1,0 +1,14 @@
+<h1>Users#index</h1>
+<%= link_to '新規作成', new_user_path %>
+<table>
+  <thead>
+  <tr>
+    <th>#id</th>
+    <th>性別</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= render partial: 'user', collection: @users %>
+  </tbody>
+</table>
